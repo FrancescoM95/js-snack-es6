@@ -50,3 +50,26 @@ Id|Name|Grades
 102|Piero della Francesca|50
 120|Francesca da Polenta|84
 ```
+
+---
+
+# Esercizio di oggi: **Snack Array Methods 2 (La vendetta)**
+
+nome repo:  stessa di ieri: `js-snack-es6`
+
+## SNACK 3
+
+1. Creare un array di oggetti:
+    - Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso.
+1. Stampare in console la bici con peso minore utilizzando il destructuring.
+
+## SNACK 4
+
+1. Creare un array di oggetti di squadre di calcio:
+    - Ogni squadra avrà diverse proprietà: 
+        - nome
+        - punti fatti
+        - falli subiti
+    - nome sarà l’unica proprietà da inventare voi, le altre saranno tutte settate a 0.
+1. Generare numeri random al posto degli 0 nelle proprietà punti fatti e falli subiti.
+1. Infine, usando il destructuring, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
