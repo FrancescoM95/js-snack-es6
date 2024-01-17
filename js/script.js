@@ -4,6 +4,7 @@ console.log('JS OK');
 //* SNACK 1
 //--------------------------------
 
+
 const table = 'Tavolo Vip';
 
 const guests = [
@@ -31,6 +32,7 @@ console.log(guestsList);
 //--------------------------------
 //* SNACK 2
 //--------------------------------
+
 
 const students = [
     {
@@ -93,3 +95,58 @@ studentsUpperCase.forEach(student => {
     li.innerText = student;
     ul.appendChild(li);
 })
+
+
+//--------------------------------
+//* SNACK 3
+//--------------------------------
+
+// Array di oggetti contenente bici da corsa con le seguenti proprietà: nome e peso.
+const bikes = [
+    {
+        name: 'Bianchi',
+        weight: 7.5
+    },
+    {
+        name: 'Atala',
+        weight: 8.2
+    },
+    {
+        name: 'Olmo',
+        weight: 7.8
+    },
+    {
+        name: 'Casati',
+        weight: 7.3
+    },
+    {
+        name: 'Colnago',
+        weight: 7.0
+    },
+    {
+        name: 'Bottecchia',
+        weight: 7.9
+    },
+    {
+        name: 'Cinelli',
+        weight: 7.4
+    },
+    {
+        name: 'Pistidda',
+        weight: 8.5
+    },
+];
+
+// Iniziallizziamo la bici più leggera come la prima dell'array
+let lightestBike = bikes[0];
+
+// Giriamo sull'array per trovare quella con peso minore
+bikes.forEach(bike => {
+    if (bike.weight < lightestBike.weight) {
+        lightestBike = bike;
+    }
+});
+
+// Stampiamo il risultato in console
+const { name, weight } = lightestBike;
+console.log(`La bici più leggera è la ${name} con un peso di ${weight} kg.`);
