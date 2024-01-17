@@ -150,3 +150,126 @@ bikes.forEach(bike => {
 // Stampiamo il risultato in console
 const { name, weight } = lightestBike;
 console.log(`La bici più leggera è la ${name} con un peso di ${weight} kg.`);
+
+
+//--------------------------------
+//* SNACK 4
+//--------------------------------
+
+
+// Funzione per generare numeri random da 1 a 100
+const getRandomNumber = () => Math.floor(Math.random() * 100) + 1;
+
+
+// Array di oggetti contenente le 20 squadre di calcio della Serie A
+const serieAteams = [
+    {
+        name: 'Juventus',
+        points: getRandomNumber(),
+        fouls: getRandomNumber()
+    },
+    {
+        name: 'Inter',
+        points: getRandomNumber(),
+        fouls: getRandomNumber()
+    },
+    {
+        name: 'Milan',
+        points: getRandomNumber(),
+        fouls: getRandomNumber()
+    },
+    {
+        name: 'Napoli',
+        points: getRandomNumber(),
+        fouls: getRandomNumber()
+    },
+    {
+        name: 'Roma',
+        points: getRandomNumber(),
+        fouls: getRandomNumber()
+    },
+    {
+        name: 'Atalanta',
+        points: getRandomNumber(),
+        fouls: getRandomNumber()
+    },
+    {
+        name: 'Lazio',
+        points: getRandomNumber(),
+        fouls: getRandomNumber()
+    },
+    {
+        name: 'Sassuolo',
+        points: getRandomNumber(),
+        fouls: getRandomNumber()
+    },
+    {
+        name: 'Verona',
+        points: getRandomNumber(),
+        fouls: getRandomNumber()
+    },
+    {
+        name: 'Frosinone',
+        points: getRandomNumber(),
+        fouls: getRandomNumber()
+    },
+    {
+        name: 'Genoa',
+        points: getRandomNumber(),
+        fouls: getRandomNumber()
+    },
+    {
+        name: 'Fiorentina',
+        points: getRandomNumber(),
+        fouls: getRandomNumber()
+    },
+    {
+        name: 'Bologna',
+        points: getRandomNumber(),
+        fouls: getRandomNumber()
+    },
+    {
+        name: 'Udinese',
+        points: getRandomNumber(),
+        fouls: getRandomNumber()
+    },
+    {
+        name: 'Cagliari',
+        points: getRandomNumber(),
+        fouls: getRandomNumber()
+    },
+    {
+        name: 'Monza',
+        points: getRandomNumber(),
+        fouls: getRandomNumber()
+    },
+    {
+        name: 'Torino',
+        points: getRandomNumber(),
+        fouls: getRandomNumber()
+    },
+    {
+        name: 'Empoli',
+        points: getRandomNumber(),
+        fouls: getRandomNumber()
+    },
+    {
+        name: 'Lecce',
+        points: getRandomNumber(),
+        fouls: getRandomNumber()
+    },
+    {
+        name: 'Salernitana',
+        points: getRandomNumber(),
+        fouls: getRandomNumber()
+    },
+];
+
+
+// Creiamo un nuovo array contenente solo nome della squadra e falli subiti
+const teams = serieAteams.map(({ name, fouls }) => ({ name, fouls }));
+
+
+// Stampiamo in console
+console.log(serieAteams);
+console.log(teams);
