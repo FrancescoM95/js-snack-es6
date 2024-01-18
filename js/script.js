@@ -264,10 +264,12 @@ const serieAteams = [
 ];
 
 
+// Generiamo un numero casuale per punti e falli subiti 
 serieAteams.forEach(team => {
     team.points = getRandomNumber();
     team.fouls = getRandomNumber();
 });
+
 
 // Creiamo un nuovo array contenente solo nome della squadra e falli subiti
 const teams = serieAteams.map(({ name, fouls }) => ({ name, fouls }));
